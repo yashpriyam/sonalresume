@@ -1,5 +1,6 @@
 <h2><%= @play.title %></h2>
 <h3><%= @play.director %></h3>
+<h4><%= @play.category.name %></h4>
 <p><%= @play.description %></p>
 
 <div class="links btn-group">
@@ -9,5 +10,5 @@
       <%= link_to "Edit", edit_play_path(@play) %>
       <%= link_to "Delete", play_path(@play), method: :Delete, data: { confirm: "Are you Sure?" } %>
     <% end %>
-  <% end %> 
+  <% end %>
 </div>
