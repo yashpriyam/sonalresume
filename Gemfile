@@ -22,6 +22,7 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'simple_form', '~> 4.1'
 gem 'bootstrap-sass', '~> 3.4.1'
+gem 'devise', '~> 4.6', '>= 4.6.2'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
