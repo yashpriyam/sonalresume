@@ -9,7 +9,7 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.7'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.3.13'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -46,6 +46,16 @@ group :development, :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
 end
+
+group :development do
+  gem 'sqlite3', '~> 1.3.13'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
