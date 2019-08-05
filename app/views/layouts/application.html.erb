@@ -35,13 +35,13 @@
                     <%= link_to category.name, plays_path(category: category.name), class: "link" %>
                  </li>
               <% end %>
+              <li><a href="https://github.com/sonalroy539">My GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/sonal-roy-966653187">LinkedIN</a></li>
             </ul>
           </li>
 
           <% if user_signed_in? %>
             <li><%= link_to "Add Play", new_play_path %></li>
-            <li><a href="https://github.com/sonalroy539">My GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/sonal-roy-966653187">LinkedIN</a></li>
           <% end %>
         </ul>
       </div>
