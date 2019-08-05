@@ -12,12 +12,6 @@
 
 ActiveRecord::Schema.define(version: 20190729181204) do
 
-  create_table "categories", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "plays", force: :cascade do |t|
     t.string "title"
     t.text "description"
@@ -25,10 +19,9 @@ ActiveRecord::Schema.define(version: 20190729181204) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
-    t.integer "category_id"
     t.string "play_img_file_name"
     t.string "play_img_content_type"
-    t.bigint "play_img_file_size"
+    t.integer "play_img_file_size", limit: 8
     t.datetime "play_img_updated_at"
   end
 
