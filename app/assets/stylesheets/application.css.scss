@@ -188,6 +188,10 @@
    }
  }
 
+ .current-category {
+   margin-bottom: 40px;
+ }
+
  .reviews {
    @include background-title;
    margin-bottom: 40px;
@@ -222,6 +226,9 @@
      font-weight: bold;
    }
 
+   #category_id {
+     margin-bottom: 10px;
+   }
 
    #play_play_img {
      margin-bottom: 10px;
@@ -236,7 +243,10 @@
      font-weight: bold;
    }
 
-   
+   #play_category_id {
+     margin-bottom: 10px;
+   }
+
    #play_play_img {
      margin-bottom: 10px;
    }
