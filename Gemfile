@@ -7,6 +7,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'dotenv-rails', groups: [:development, :test]
 gem 'rails', '~> 5.1.7'
 # Use sqlite3 as the database for Active Record
 
@@ -24,6 +25,7 @@ gem 'simple_form', '~> 4.1'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'devise', '~> 4.6', '>= 4.6.2'
 gem 'paperclip', '~> 6.1'
+gem 'aws-sdk', '~> 2'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
