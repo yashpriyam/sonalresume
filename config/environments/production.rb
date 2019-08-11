@@ -38,10 +38,11 @@ Rails.application.configure do
       secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),
       s3_region: ENV.fetch('AWS_REGION'),
     }
-    Paperclip::Attachment.default_options[:url] = ':s3_domain_url'
-    Paperclip::Attachment.default_options[:path] = '/:class/:attachment/:id_partition/:style/:filename'
-    Paperclip::Attachment.default_options[:s3_host_name] = 's3-us-east-1.amazonaws.com'
   }
+
+  Paperclip::Attachment.default_options[:url] = ':s3_domain_url'
+  Paperclip::Attachment.default_options[:path] = '/:class/:attachment/:id_partition/:style/:filename'
+  Paperclip::Attachment.default_options[:s3_host_name] = 's3-us-east-1.amazonaws.com'
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
