@@ -12,7 +12,7 @@ class PlaysController < ApplicationController
   end
 
   def show
-    @reviews =  @movie.reviews.order("created_at DESC")
+    @reviews =  @play.reviews.order("created_at DESC")
     unless @reviews.present?
      @avg_review = 0
     else
