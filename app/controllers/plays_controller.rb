@@ -12,10 +12,11 @@ class PlaysController < ApplicationController
   end
 
   def show
-    if @play.reviews.blank?
-      @average_review = 0
+    @reviews =  @movie.reviews.order("created_at DESC")
+    unless @reviews.present?
+     @avg_review = 0
     else
-      @average_review = @play.reviews.average(:rating).round(2)
+     @avg_review = @reviews.average(:rating).present? ? @reviews.average(:rating).round(2) : 0
     end
   end
 
