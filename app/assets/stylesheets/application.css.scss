@@ -44,7 +44,7 @@
  }
 
 .navbar {
-  font-family: 'Lato', sans-serif;  
+  font-family: 'Lato', sans-serif;
 }
 .navbar-default {
   background-color: #fff;
@@ -135,10 +135,10 @@
 
  .play {
    height: 350px;
-   width: 250px;
-   margin-bottom: 40px;
+   width: 260px;
+   margin-bottom: 5px;
    @include background-title;
- }
+  }
 
  .play-show {
    height: 475px;

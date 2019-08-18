@@ -6,10 +6,12 @@
   <div class="row">
     <%= @plays.each do |play| %>
       <div class="col-md-3">
-        <a href="/plays/ <%= play.id %>">
-          <%= image_tag play.play_img.url(:play_index), class: "play" %>
-          <h2><%= link_to play.title, play_path(play) %></h2>
-        </a>
+        <div class="panel panel-default">
+          <a href="/plays/ <%= play.id %>">
+            <%= image_tag play.play_img.url(:play_index), class: "play" %>
+            <h2><%= link_to play.title, play_path(play) %></h2>
+          </a>
+        </div>        
       </div>
     <% end %>
   </div>
